@@ -1,3 +1,2 @@
-docker stop dockerlab
-docker run -e environment=testing dockerlab
-docker run -p 8000:8000 dockerlab
+docker stop dockerlab_back-container
+docker run -p 8000:8000 -e environment=testing --name dockerlab_back3-container dockerlab_back
