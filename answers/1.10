@@ -1,2 +1,2 @@
-docker exec -it dryport/dockerlabackgound bash
+docker exec -it dryport/dockerlaback bash
 cat /etc/*release
