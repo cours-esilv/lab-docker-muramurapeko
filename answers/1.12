@@ -1,2 +1,3 @@
-docker run -d --name dryport/dockerlaback <backend-image>
-docker run -d --name frontend-container -e BACKEND_URL=dryport/dockerlaback <frontend-image>
+docker network create my-network
+docker run -d --name docker_lab_front_container --network my-network dryport/docker_lab_front
+docker run -d --name docker_lab_back_container --network my-network dryport/docker_lab_back
