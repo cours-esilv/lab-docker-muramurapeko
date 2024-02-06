@@ -1,0 +1,2 @@
+docker exec -it dockerlabackgound bash
+cat /etc/*release
