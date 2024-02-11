@@ -1,3 +1,2 @@
-docker network create my-network
-docker run -d --name docker_lab_front_container --network my-network dryport/docker_lab_front
-docker run -d --name docker_lab_back_container --network my-network dryport/docker_lab_back
+docker run -d --name myapp-back -p 8080:5000 -e CURRENT_ENVIRONMENT=dev username/myapp-back:latest
+docker run -d --name myapp-front -p 80:80 -e WS_BACK_URL=http://myapp-back:5000 username/myapp-front:latest
