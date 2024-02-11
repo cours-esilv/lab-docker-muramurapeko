@@ -1,3 +1,1 @@
-docker stop dockerlab_back_container
-docker rename dockerlab_back_container dockerlab_back_container
-docker start -d dockerlab_back_container
+docker run -d -p 5000:5000 --name meaningful-name username/myapp-back:latest
